@@ -5,19 +5,58 @@
 
   <header>
 
-    <h1 id="app-title">My Portfolio</h1>
+    <div class="nav-background">
+
+      <div id="nav-background-holder">
+        <img id="nav-background-image" src="assets/background-1.png"/>
+        
+        <div id="nav-overlay">
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="nav-bar">
+
+    </div>
+
+    <div class="nav-bar-overlay">
+
+      <div class="app-title">
+        <img id="app-logo" src="assets/logo.png" draggable="false" alt="Logo"/>
+        <p>My Portfolio</p>
+      </div>
+      
+      <div>
+  
+        <div class="nav-button">
+          <div class="nav-1">
+            <p><img src="assets/hamburger-menu-white.png" id="app-hamburger-menu" draggable="false" alt="menu"></p>
+          </div>
+        </div>
+  
+        <div class="nav-button">
+          <div class="nav-2">
+            <nav>
+              <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+              <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+              <a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a>
+              <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+            </nav>
+          </div>
+        </div>
+  
+      </div>
+
+    </div>
+
   </header>
 
   <body>
-    <nav>
-      <a routerLink="/home">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/projects">Projects</a>
-      <a routerLink="/contact">Contact</a>
-    </nav>
+
+    <router-outlet></router-outlet>
 
   </body>
 
 </html>
-
-<router-outlet></router-outlet>

@@ -1,62 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-  <link rel="stylesheet" href="app.component.css"/>
 
+    <link rel="stylesheet" href="app.component.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
-  <header>
+    <div id="nav-container">
 
-    <div class="nav-background">
+      <div class="nav-bar-holder">
 
-      <div id="nav-background-holder">
-        <img id="nav-background-image" src="assets/background-1.png"/>
+        <div class="app-title">
+          <img id="app-logo" src="assets/logo.png" draggable="false" alt="Logo"/>
+          <p>Clarence Joven</p>
+        </div>
         
-        <div id="nav-overlay">
+        <div>
 
-        </div>
-      </div>
-
-    </div>
-
-    <div class="nav-bar">
-
-    </div>
-
-    <div class="nav-bar-overlay">
-
-      <div class="app-title">
-        <img id="app-logo" src="assets/logo.png" draggable="false" alt="Logo"/>
-        <p>My Portfolio</p>
-      </div>
-      
-      <div>
-  
-        <div class="nav-button">
-          <div class="nav-1">
-            <p><img src="assets/hamburger-menu-white.png" id="app-hamburger-menu" draggable="false" alt="menu"></p>
+          <div class="nav-button">
+            <div class="nav-1">
+              <p><img src="assets/hamburger-menu-white.png" id="app-hamburger-menu" draggable="false" alt="menu"></p>
+            </div>
           </div>
-        </div>
-  
-        <div class="nav-button">
-          <div class="nav-2">
-            <nav>
-              <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-              <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
-              <a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a>
-              <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
-            </nav>
+
+          <div class="nav-button">
+            <div class="nav-2">
+              <nav>
+                <a class="nav-tab" routerLinkActive="true" ariaCurrentWhenActive="page">Home</a>
+                <a class="nav-tab" routerLink="/about">About</a>
+                <a class="nav-tab" routerLink="/projects">Projects</a>
+                <a class="nav-tab" routerLink="/contact">Contact</a>
+              </nav>
+            </div>
           </div>
+
         </div>
-  
+
       </div>
 
     </div>
-
-  </header>
-
-  <body>
 
     <router-outlet></router-outlet>
-
-  </body>
-
-</html>

@@ -1,0 +1,113 @@
+/* CSS styles for the home component */
+
+html {
+    --background: rgb(255, 255, 255);
+    --background-secondary: rgb(236, 236, 236);
+    --active-color: rgb(126, 126, 126);
+    --text-color: rgb(105, 105, 105);
+    --sub-text-color: rgb(0, 0, 0);
+}
+
+body {
+    max-width: 100%;
+}
+
+.image-banner {
+    max-width: 100%;
+}
+
+@media (min-width: 780px) /*Desktop*/
+{
+    .slideshow-holder {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 40%;
+    }
+
+    #scroll-button {
+        align-items: center;
+        opacity: .5;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: var(--sub-text-color);
+        background-color: var(--active-color);
+    }
+
+    #scroll-label {
+        opacity: 1;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 780px) /*Mobile*/
+{
+    .slideshow-holder {
+        display: none;
+    }
+}
+
+
+/* Path: my-portfolio/src/app/home/home.component.html */
+
+/* CSS variables for background colors */
+html {
+    --background: rgb(255, 255, 255);
+    --background-secondary: rgb(236, 236, 236);
+    --active-color: rgb(126, 126, 126);
+    --text-color: rgb(105, 105, 105);
+    --sub-text-color: rgb(0, 0, 0);
+}
+
+/* Body styles */
+body {
+    max-width: 100%;
+}
+
+/* Image banner styles */
+.image-banner {
+    max-width: 100%;
+}
+
+/* Desktop styles */
+@media (min-width: 780px) {
+    /* Slideshow holder styles */
+    .slideshow-holder {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 40%;
+    }
+
+    /* Scroll button styles */
+    #scroll-button {
+        align-items: center;
+        opacity: .5;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: var(--sub-text-color);
+        background-color: var(--active-color);
+    }
+
+    /* Scroll label styles */
+    #scroll-label {
+        opacity: 1;
+        font-size: 32px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 780px) {
+    /* Hide slideshow holder */
+    .slideshow-holder {
+        display: none;
+    }
+}

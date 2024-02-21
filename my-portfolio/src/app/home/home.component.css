@@ -111,3 +111,7 @@ body {
         display: none;
     }
 }
+
+#scroll-button-holder {
+    display: none;
+}

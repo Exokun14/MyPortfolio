@@ -1,12 +1,15 @@
+/* Global CSS styles */
+
 html
 {
     margin: 0;
     padding: 0;
-    --background: rgb(255, 255, 255);
-    --background-secondary: rgb(236, 236, 236);
-    --active-color: rgb(126, 126, 126);
-    --text-color: rgb(105, 105, 105);
-    --sub-text-color: rgb(0, 0, 0);
+    --background: #020202;
+    --background-secondary: #121212;
+    --background-tertiary: #282828;
+    --active-color: #ffffff;
+    --text-color: #ffffff;
+    --sub-text-color: #d7d7d7;
 
     font-family: "Lato", sans-serif;
     font-weight: 400;

@@ -1,26 +1,28 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { FeaturedComponentAComponent } from './featured-component-a/featured-component-a.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [FeaturedComponentAComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 
 export class HomeComponent {
 
-  @ViewChild('test', {static: true}) testRef!: ElementRef;
   @ViewChild('scrollButtonHolder', {static: true}) scrollButtonHolderRef!: ElementRef;
   @ViewChild('imageSlideshow', {static: true}) imageSlideshowRef!: ElementRef;
 
-  updateTest() {
-
-    console.log(this.testRef.nativeElement.innerHTML);
-
-    this.testRef.nativeElement.innerHTML = 'The Greatest Developer That&#39s Ever Lived';
+  scrollLeft()
+  {
+    console.log('scrolling left');
   }
 
+  scrollRight() 
+  {
+    console.log('scrolling right');
+  }
   
   ngAfterViewInit() 
   {

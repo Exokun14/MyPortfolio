@@ -1,41 +1,45 @@
-    <div #imageSlideshow  id="image-slideshow">
-        <img class="image-banner" src="assets/test.jpeg" draggable="false" alt="Logo"/>
-    </div>
+    <div #imageSlideshow class="image-carousel">
 
-    <!--
-    <div id="image-slideshow">
-        <img class="image-banner" src="assets/test-2.jpeg" draggable="false" alt="Logo"/>
-    </div>
+        <div #image_1 id="image-slideshow">
+            <img class="image-banner" src="assets/test.jpeg" draggable="false" alt="Logo"/>
+        </div>
+    
+        <!--
+        <div id="image-slideshow">
+            <img class="image-banner" src="assets/test-2.jpeg" draggable="false" alt="Logo"/>
+        </div>
+    
+        <div id="image-slideshow">
+            <img class="image-banner" src="assets/test-3.jpeg" draggable="false" alt="Logo"/>
+        </div>
+        -->
 
-    <div id="image-slideshow">
-        <img class="image-banner" src="assets/test-3.jpeg" draggable="false" alt="Logo"/>
     </div>
-    -->
 
     <div id="slideshow">
 
         <div #scrollButtonHolder id="scroll-button-holder">
-        <div class="slideshow-holder">
-            
-            <div>
-                <span id="scroll-button">
-                    <span id="scroll-label">&#10094;</span>
-                </span>
+
+            <div class="slideshow-holder">
+                
+                <div id="slideshow-button" (click)="scrollLeft()">
+                    <span id="scroll-button">
+                        <span id="scroll-label">&#10094;</span>
+                    </span>
+                </div>
+                    
+                <div id="slideshow-button" (click)="scrollRight()">
+                    <span id="scroll-button">
+                        <span id="scroll-label">&#10095;</span>
+                    </span>
+                </div>
+        
             </div>
-            
-            <div>
-                <span id="scroll-button">
-                    <span id="scroll-label">&#10095;</span>
-                </span>
-            </div>
-    
-        </div>
 
         </div>
 
     </div>
-
-    <p #test>Hello world!</p>
-    <button (click)="updateTest()">Click me</button>
+    
+    <app-featured-component-a></app-featured-component-a>
 
     <link rel="stylesheet" href="home.component.css"/>

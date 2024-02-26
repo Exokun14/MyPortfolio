@@ -2,8 +2,8 @@
 
 html
 {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     --background: #020202;
     --background-secondary: #121212;
     --background-tertiary: #282828;
@@ -21,8 +21,8 @@ html
 
 body
 {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 a, a:visited

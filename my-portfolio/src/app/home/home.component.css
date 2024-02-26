@@ -2,7 +2,10 @@
 
 /* Body styles */
 body {
+    padding: 0%;
+    margin: 0%;
     max-width: 100%;
+    background-color: red;
 }
 
 /* Image banner styles */
@@ -44,21 +47,55 @@ body {
         opacity: 1;
         font-size: 32px;
     }
+
+    #image-content
+    {
+        color: var(--background-secondary);
+        position: absolute;
+        top: 28vh;
+        left: 10vw;
+    }
+
+    #image-logo
+    {
+        min-width: 12vw;
+        max-width: 12vw;
+        min-height: 24vh;
+        max-height: 24vh;
+    }
+
+    #image-header
+    {
+        font-size: 2.5vw;
+        max-width: 35vw;
+        overflow: auto;
+    }
+
+    #image-button
+    {
+        width: 32vh;
+        height: 8vh;
+        margin-top: 5vh;
+        margin-left: .5vw;
+        margin-right: .5vw;
+
+        font-size: 32px;
+        background-color: transparent;
+        border: 1px solid var(--background-secondary);
+    }
+
+    #image-button:hover
+    {
+        transition: .5s;
+        background-color: var(--background-secondary);
+        color: var(--text-color);
+    }
 }
 
 /* Mobile styles */
 @media (max-width: 780px) 
 {
-    .image-banner {
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    /* Hide slideshow holder */
-    .slideshow-holder {
-        display: none;
-    }
-
+    
 }
 
 #scroll-button-holder:hover {

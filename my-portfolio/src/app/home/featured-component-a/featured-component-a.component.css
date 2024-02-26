@@ -1,0 +1,14 @@
+.content
+{
+    position: absolute;
+    top: 99.8vh;
+    max-width: 100%;
+    margin: 0%;
+    padding-top: 0%;
+}
+
+.image-banner {
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+}

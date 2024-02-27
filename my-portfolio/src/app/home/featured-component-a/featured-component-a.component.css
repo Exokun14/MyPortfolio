@@ -1,5 +1,7 @@
 .content
 {
+    display: grid;
+    grid-template-columns: 1fr;
     max-height: 100%;
     max-width: 100%;
     margin: 0%;
@@ -9,13 +11,11 @@
 /* Desktop styles */
 @media (min-width: 780px) 
 {
-    .content
-    {
-        position: absolute;
-        top: 99.8vh;
-    }
 
     .image-banner {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        z-index: -1;
         max-width: 100%;
         margin: 0%;
         padding: 0%;
@@ -23,9 +23,10 @@
 
     .sub-content
     {
+        grid-row-start: 1;
+        grid-column-start: 1;
         color: red;
-        position: absolute;
-        top: 20vh;
+        margin-top: 10%;
         margin-left: 12%;
     }
 

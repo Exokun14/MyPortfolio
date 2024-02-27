@@ -1,0 +1,65 @@
+.content
+{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0%;
+    padding-top: 0%;
+}
+
+/* Desktop styles */
+@media (min-width: 780px) 
+{
+    .content
+    {
+        position: absolute;
+        top: 211.8vh;
+    }
+
+    .image-banner {
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .sub-content
+    {
+        color: red;
+        position: absolute;
+        top: 20vh;
+        margin-left: 12%;
+    }
+
+    .content-container
+    {
+        display: flex;
+    }
+
+    #content-image
+    {
+        min-width: 35vw;
+        max-width: 35vw;
+        min-height: 85vh;
+        max-height: 85vh;
+    }
+
+    .sub-content-container
+    {
+        margin-left: 7.5%;
+        min-width: 35vw;
+        max-width: 35vw;
+    }
+
+    #sub-content-image
+    {
+        min-width: 12.5vw;
+        max-width: 12.5vw;
+        min-height: 25vh;
+        max-height: 25vh;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 780px) 
+{
+    
+}

@@ -25,6 +25,18 @@ body
     padding: 0%;
 }
 
+/* Desktop styles */
+@media (min-width: 780px) 
+{
+
+}
+
+/* Mobile styles */
+@media (max-width: 780px) 
+{
+    
+}
+
 a, a:visited
 {
     color: var(--text-color);

@@ -2,6 +2,8 @@
 {
     margin: 0%;
     padding: 0%;
+    min-height: 100%;
+    max-height: 100%;
     min-width: 100%;
     max-width: 100%;
     background-color: var(--background-secondary);
@@ -20,8 +22,8 @@
 {
     .content
     {
-        min-height: 70vh;
-        max-height: 70vh;
+        min-height: 78vh;
+        max-height: 78vh;
     }
 
     #content-header
@@ -56,6 +58,22 @@
         transition: .5s;
         background-color: var(--background-tertiary);
         color: var(--active-color);
+    }
+
+    .updates-container
+    {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0%;
+        min-height: 52vh;
+        max-height: 52vh;
+    }
+
+    #container
+    {
+        margin-left: .75%;
+        margin-right: .75%;
     }
 
 }

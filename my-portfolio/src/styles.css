@@ -53,3 +53,83 @@ a:active
 {
     color: var(--text-color);
 }
+
+.hidden
+{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.hidden-fadeInUp
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.2s;
+
+}
+
+.hidden-fadeInLeft
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+
+.hidden-fadeInRight
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 3s;
+}
+
+@media (prefers-reduced-motion)
+{
+    .hidden
+    {
+        transition: none;
+    }
+
+    .hidden-fadeInUp
+    {
+        transition: none;
+    }
+
+    .hidden-fadeInLeft
+    {
+        transition: none;
+    }
+
+    .hidden-fadeInRight
+    {
+        transition: none;
+    }
+}
+
+.show
+{
+    opacity: 1;
+}
+
+.fadeInUp
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.fadeInLeft
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.fadeInRight
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

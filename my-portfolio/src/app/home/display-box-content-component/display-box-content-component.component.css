@@ -1,0 +1,128 @@
+/* Desktop styles */
+@media (min-width: 780px) 
+{
+    .content
+    {
+        color: red;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .image-banner
+    {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    #image-banner
+    {
+        min-width: 15vw;
+        max-width: 15vw;
+        min-height: 30vh;
+        max-height: 30vh;
+        margin-top: 2%;
+        margin-bottom: 8%;
+    }
+
+    .sub-content
+    {
+        min-height: 65vh;
+        max-height: 65vh;
+        display: flex;
+        align-items: flex-end;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        margin-left: 5%;
+    }
+
+    #content-title
+    {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    #content-description
+    {
+        margin-bottom: 15%;
+    }
+
+    #content-icons
+    {
+        display: flex;
+    }
+
+    #icon
+    {
+        min-width: 48px;
+        max-width: 48px;
+        min-height: 48px;
+        max-height: 48px;
+        margin-left: 1.5%;
+        margin-right: 1.5%
+    }
+
+    .content-button
+    {
+        width: 64vh;
+        height: 8vh;
+        margin-top: 5vh;
+        margin-left: .5vw;
+        margin-right: .5vw;
+        font-size: 32px;
+        text-align: center;
+        
+        transition: height .5s ease-in;
+        
+        background-color: transparent;
+        border: 1px solid var(--background-secondary);
+    }
+
+    .content-button-holder
+    {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        min-width: 34.5vw;
+        max-width: 34.5vw;
+        min-height: 82.5vh;
+        max-height: 82.5vh;
+        align-items: flex-end;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button-description
+    {
+        display: none;
+    }
+
+    .learn-more
+    {
+        font-weight: bold;
+        margin-top: 3%;
+    }
+
+    #learn-more
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .learn-more-description
+    {
+        font-weight: normal;
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+        font-size: 16px;
+    }
+
+}
+
+/* Mobile styles */
+@media (max-width: 780px) 
+{
+    
+}

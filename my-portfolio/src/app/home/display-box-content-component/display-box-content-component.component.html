@@ -1,1 +1,43 @@
-<p>display-box-content-component works!</p>
+<div class="content">
+
+    <div class="image-banner">
+        <img id="image-banner" [src]="'assets/Placeholder.png'" draggable="false" alt="Logo"/>
+    </div>
+
+    <div class="sub-content">
+
+        <div>
+
+            <p id="content-title">Title</p>
+            <p id="content-description">Description</p>
+
+            <div id="content-icons">
+
+                <img id="icon" [src]="'assets/logo.png'" draggable="false" alt="icon"/>
+                <img id="icon" [src]="'assets/logo.png'" draggable="false" alt="icon"/>
+                <img id="icon" [src]="'assets/logo.png'" draggable="false" alt="icon"/>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+
+    <div class="content-button-holder">
+
+        <div #button (click)="divisionController()" class="content-button">
+            <div class="learn-more">
+                <p id="learn-more">Learn More</p>
+            </div>
+
+            <div class="learn-more-description">
+                <p #description id="button-description">Chiori, please come home!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

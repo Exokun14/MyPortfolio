@@ -26,6 +26,11 @@
         max-height: 78vh;
     }
 
+    #content-container
+    {
+        transition-delay: .5s;
+    }
+
     #content-header
     {
         padding-top: 2%;

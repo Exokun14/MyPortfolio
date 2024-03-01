@@ -20,6 +20,12 @@
     color: var(--background-secondary);
 }
 
+.sub-feature-component
+{
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
 /* Desktop styles */
 @media (min-width: 780px) {
     .image-banner {
@@ -93,6 +99,14 @@
         transition: .5s ease-in;
         background-color: var(--background-secondary);
         color: var(--text-color);
+    }
+
+    .display-box-container
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 12%;
+        margin-right: 12%;
     }
 }
 

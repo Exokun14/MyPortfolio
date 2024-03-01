@@ -1,0 +1,55 @@
+/* Desktop styles */
+@media (min-width: 780px) 
+{
+    .content
+    {
+        min-width: 34.5vw;
+        max-width: 34.5vw;
+        min-height: 85vh;
+        max-height: 85vh;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+
+    }
+
+    #content-holder
+    {
+        min-width: 34.5vw;
+        max-width: 34.5vw;
+        min-height: 85vh;
+        max-height: 85vh;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        transition-delay: 1.5s;  
+    }
+
+    .image-banner
+    {
+        min-width: 34.5vw;
+        max-width: 34.5vw;
+        min-height: 85vh;
+        max-height: 85vh;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .sub-content
+    {
+        min-width: 34.5vw;
+        max-width: 34.5vw;
+        min-height: 85vh;
+        max-height: 85vh;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 780px) 
+{
+    
+}

@@ -1,22 +1,23 @@
-    <div class="content-banner-holder">
+    <div id="about-content" class="content-banner-holder">
 
         <div class="image-banner">
 
-            <img class="image-banner" src="assets/Placeholder.png" draggable="false" alt="Logo"/>
+            <img class="image-banner" src="assets/homepage-banner.png" draggable="false" alt="Logo"/>
     
         </div>
     
         <div id="image-content">
-            <img class="hidden-fadeInUp" id="image-logo" src="assets/logo.png" draggable="false" alt="Logo"/>
+            <img class="hidden-fadeInUp" id="image-logo" src="assets/homepage-icon.png" draggable="false" alt="Logo"/>
     
             <div class="hidden-fadeInUp">
-                <h1 id="image-header">Dream Life</h1>
-                <p id="image-paragraph">This is a test paragraph.</p>
+                <h1 id="image-header">Clarence Joven</h1>
+                <p id="image-paragraph">Hello world! My name is Clarence, I am a developer and I work on all sorts of things ranging from web development, game creation, program creation etc. I also have a wide variety of skills for different expertise as I like to learn about new things every once in a while.</p>
+                <p id="image-paragraph">To learn more about me, click on the links below or explore the page.</p>
             </div>
     
             <div class="hidden-fadeInUp">
-                <button id="image-button">Button 1</button>
-                <button id="image-button">Button 2</button>
+                <button id="image-button" onclick="location.href='#skills-content'">My Skills</button>
+                <button id="image-button" onclick="location.href='#contant-content'">Contact Me</button>
             </div>
         </div>
 
@@ -26,7 +27,7 @@
     <app-featured-component-b></app-featured-component-b>
     <app-news-and-updates-component></app-news-and-updates-component>
 
-    <div class="sub-feature-component">
+    <div class="sub-feature-component" id="skills-content">
         <app-sub-feature-component-a></app-sub-feature-component-a>
     </div>
 
@@ -54,7 +55,7 @@
         <app-sub-feature-component-a></app-sub-feature-component-a>
     </div>
 
-    <div class="display-box-container">
+    <div class="display-box-container" id="contant-content">
 
         <app-display-box-component></app-display-box-component>
         <app-display-box-component></app-display-box-component>

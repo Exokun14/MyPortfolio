@@ -53,12 +53,15 @@
 
     #image-content
     {
+        color: var(--text-color);
+        font-family: Georgia;
         margin-top: 8%;
         margin-left: 8%;
     }
 
     #image-logo
     {
+        border-bottom: 1px solid var(--text-color);
         min-width: 12vw;
         max-width: 12vw;
         min-height: 24vh;
@@ -74,6 +77,7 @@
 
     #image-paragraph
     {
+        text-align: justify;
         font-size: 1vw;
         max-width: 35vw;
         overflow: auto;
@@ -90,15 +94,16 @@
         font-size: 32px;
         
         background-color: transparent;
-        border: 1px solid var(--background-secondary);
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
     }
 
     #image-button:hover
     {
         cursor: pointer;
         transition: .5s ease-in;
-        background-color: var(--background-secondary);
-        color: var(--text-color);
+        background-color: var(--text-color);
+        color: var(--background-secondary);
     }
 
     .display-box-container

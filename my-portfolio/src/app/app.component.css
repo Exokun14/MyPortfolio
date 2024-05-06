@@ -40,10 +40,8 @@
 #nav-container
 {
     padding-top: .08%;
-    padding-bottom: .08%;
     background-color: var(--background);
     border: none;
-    border-bottom: 1px solid var(--background-tertiary);
 }
 
 .nav-bar-holder

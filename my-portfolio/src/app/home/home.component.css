@@ -3,21 +3,23 @@
 .content-banner-holder
 {
     display: grid;
-    grid-template-columns: 1fr;
-}
+    grid-template-columns: auto;
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    background-color: var(--background);
 
-/* Image banner styles */
-.image-banner {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    max-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 #image-content
 {
+    min-height: 78vh;
+
     grid-row-start: 1;
     grid-column-start: 1;
-    color: var(--background-secondary);
+    color: var(--text-color);
 }
 
 .sub-feature-component
@@ -42,7 +44,7 @@
         padding-left: 15px;
         padding-right: 15px;
         color: var(--text-color);
-        background-color: var(--background-secondary);
+        background-color: var(--background);
     }
 
     /* Scroll label styles */
@@ -55,17 +57,106 @@
     {
         color: var(--text-color);
         font-family: Georgia;
-        margin-top: 8%;
-        margin-left: 8%;
+    }
+
+    #image-content-inner
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #image-content-main-header
+    {
+        grid-column-start: 1;
+        grid-row-start: 1;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #image-content-main-header-content
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 10vh;
+        max-height: 10vh;
+        min-width: 20vw;
+        max-width: 20vw;
+        border-radius: 15px;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+
+        background-color: var(--background-secondary);
+    }
+
+    #developer-content
+    {
+        display: grid;
+        grid-template-columns: 15vw 2.5vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #map-pin-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50px;
+        background-color: var(--background);
+        
+        min-width: 3vw;
+        max-width: 3vw;
+        min-height: 3vw;
+        max-height: 3vw;
+    }
+
+    #map-pin
+    {
+        min-width: 1.35vw;
+        max-width: 1.35vw;
+        min-height: 1.85vw;
+        max-height: 1.85vw;
+        z-index: 1;
+    }
+
+    #map-pin:hover
+    {
+        animation-delay: .2s;
+        animation: flip 1s infinite;
+    }
+
+    #image-logo-holder
+    {
+        display: flex;
+        justify-content: center;
+
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     #image-logo
     {
-        border-bottom: 1px solid var(--text-color);
-        min-width: 12vw;
-        max-width: 12vw;
-        min-height: 24vh;
-        max-height: 24vh;
+        min-width: 52.5vw;
+        max-width: 52.5vw;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+    #image-content-sub-header
+    {
+        display: flex;
+        justify-content: right;
+        align-items: last baseline;
+
+        margin-bottom: 8.5%;
+
+        grid-column-start: 1;
+        grid-row-start: 1;
     }
 
     #image-header
@@ -91,19 +182,20 @@
         margin-left: .5vw;
         margin-right: .5vw;
 
+        border-radius: 15px;
         font-size: 32px;
         
         background-color: transparent;
-        color: var(--text-color);
-        border: 1px solid var(--text-color);
+        color: var(--text-content-color);
+        border: 1px solid var(--text-content-color);
     }
 
     #image-button:hover
     {
         cursor: pointer;
         transition: .5s ease-in;
-        background-color: var(--text-color);
-        color: var(--background-secondary);
+        background-color: var(--background-secondary);
+        color: var(--text-color);
     }
 
     .display-box-container
